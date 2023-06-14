@@ -2,7 +2,6 @@
 	"name": "koa-vite-vercel",
 	"version": "1.0.0",
 	"description": "Testing koa + vite deploy to vercel",
-	"main": "src/server.ts",
 	"author": "JesseKoldewijn",
 	"license": "MIT",
 	"private": true,

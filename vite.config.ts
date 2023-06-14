@@ -3,9 +3,13 @@ import { VitePluginNode } from "vite-plugin-node";
 
 export default defineConfig({
 	// ...vite configures
+	root: "src",
+	build: {
+		outDir: "../api",
+	},
 	server: {
 		// vite server configs, for details see [vite doc](https://vitejs.dev/config/#server-host)
-		port: 8001,
+		port: 3000,
 	},
 	plugins: [
 		...VitePluginNode({
@@ -15,7 +19,7 @@ export default defineConfig({
 			adapter: "koa",
 
 			// tell the plugin where is your project entry
-			appPath: "./src/server.ts",
+			appPath: "index.ts",
 
 			// Optional, default: 'viteNodeApp'
 			// the name of named export of you app from the appPath file
