@@ -69,6 +69,8 @@ App.use(
 	})
 );
 
-if (import.meta.env.PROD) App.listen(8001);
+if (import.meta.env.PROD) {
+	App.listen(8001);
+}
 
 export const Main = App;

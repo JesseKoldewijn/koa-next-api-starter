@@ -9,7 +9,8 @@ export default defineConfig({
 	},
 	server: {
 		// vite server configs, for details see [vite doc](https://vitejs.dev/config/#server-host)
-		port: 3000,
+		host: "0.0.0.0",
+		port: 8001,
 	},
 	plugins: [
 		...VitePluginNode({
